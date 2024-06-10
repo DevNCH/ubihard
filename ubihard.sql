@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03/06/2024 às 19:36
+-- Tempo de geração: 10/06/2024 às 03:32
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -94,7 +94,7 @@ INSERT INTO `jogos` (`id_jogo`, `nome`, `descricao`, `valor`, `desenvolvedora`, 
 (2, 'Steamworld Dig 2', 'SteamWorld Dig voltou! Escave fundo, encontre tesouros e desenterre horrores do submundo nesta aventura de mineração em plataformas inspirada nos jogos clássicos do estilo Metroidvania.', 37.99, 'Image & Form Games', 'Image & Form Games', '2017-09-22', 'https://cdn.akamai.steamstatic.com/steam/apps/571310/header.jpg?t=1713431741'),
 (3, 'Steamworld Heist', 'Em SteamWorld Heist, você lidera um esquadrão de robôs numa série de tiroteios táticos e épicos. É estratégia por turno com um extra: Mirar manualmente as armas da tripulação, permitindo tiros insanos e ricochetes de balas!', 28.99, 'Image & Form Games', 'Image & Form Games', '2016-06-07', 'https://cdn.akamai.steamstatic.com/steam/apps/322190/header.jpg?t=1713431767'),
 (4, 'SteamWorld Quest: Hand of Gilgamech', 'Lead a party of aspiring heroes through a beautifully hand-drawn world and intense battles using only your wits and a handful of cards. Take on whatever threat comes your way by crafting your own deck choosing from over 100 unique punch-cards!', 47.49, 'Image & Form Games', 'Thunderful Publishing', '2019-05-31', 'https://cdn.akamai.steamstatic.com/steam/apps/804010/header.jpg?t=1713431801'),
-(5, 'SteamWorld Build', 'Cave o caminho para uma nova fronteira enquanto o planeta morre ao seu redor! Vá fundo e construa sem parar para encontrar a tecnologia espacial perdida, ao mesmo tempo que garante água, combustível e conforto para todos! Você tem o que é preciso para alcançar a fronteira final?', 73.99, 'The Station', 'Thunderful Publishing', '2023-12-01', 'https://cdn.akamai.steamstatic.com/steam/apps/2134770/header.jpg?t=1713431762');
+(13, 'SteamWorld Build', 'Cave o caminho para uma nova fronteira enquanto o planeta morre ao seu redor! Vá fundo e construa sem parar para encontrar a tecnologia espacial perdida, ao mesmo tempo que garante água, combustível e conforto para todos! Você tem o que é preciso para alcançar a fronteira final?', 73.99, 'The Station', 'Thunderful Publishing', '2023-12-01', 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2134770/header.jpg?t=1717763343');
 
 -- --------------------------------------------------------
 
@@ -116,7 +116,8 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id_usuario`, `email`, `nome`, `senha`, `data_nascimento`) VALUES
 (2, 'nicolascarrilhoh@gmail.com', 'sir.nch', 'deb97a759ee7b8ba42e02dddf2b412fe', '2004-03-26'),
-(3, 'Shaolin_matador@gmail.com', 'Shaolin_matador_de_porco', 'c28601671809220cab3db3ae81310805', '2000-01-01');
+(3, 'Shaolin_matador@gmail.com', 'Shaolin_matador_de_porco', 'c28601671809220cab3db3ae81310805', '2000-01-01'),
+(4, 'admin@admin', 'admin', 'aabce1b2ab31ce844bf51776f2224e6f', '1900-01-01');
 
 --
 -- Índices para tabelas despejadas
@@ -132,7 +133,7 @@ ALTER TABLE `generos`
 -- Índices de tabela `jogos`
 --
 ALTER TABLE `jogos`
-  ADD UNIQUE KEY `id_jogo` (`id_jogo`);
+  ADD PRIMARY KEY (`id_jogo`);
 
 --
 -- Índices de tabela `usuarios`
@@ -154,13 +155,13 @@ ALTER TABLE `generos`
 -- AUTO_INCREMENT de tabela `jogos`
 --
 ALTER TABLE `jogos`
-  MODIFY `id_jogo` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_jogo` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_usuario` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

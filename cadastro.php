@@ -1,5 +1,4 @@
 <?php
-
     $usuario = $_POST["usuario"];
     $email = $_POST["email"];
     $senha = md5($_POST["senha"]);
@@ -29,5 +28,4 @@
     }
 
     mysqli_close($conexao);
-    
 ?>

@@ -17,7 +17,7 @@
             $valor = $_POST["pesquisa"];
             
             if (!$valor) {
-                header("Location: index.html");
+                header("Location: index.php");
                 exit;
             }
             
@@ -38,4 +38,7 @@
             mysqli_close($conexao);
         ?>
     </body>
+    <footer>
+        <p>Para falar com o suporte, entre em contato com o número 91444076 por whatsapp</p>
+    </footer>
 </html>
