@@ -41,3 +41,31 @@ a:hover {
     max-width: 90%;
     color: #000;
 }
+.botao {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.caixa {
+    padding: 10px;
+    margin-bottom: 05px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+footer {
+text-align: center;
+            padding: 10px 0;
+            background-color: #ff0000;
+}

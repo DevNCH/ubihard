@@ -11,12 +11,14 @@
         <link rel="icon" type="image/x-icon" href="ubihard_icon.png">
     </head>
     <body>
-        <form name="pesquisa_jogo" action="pesquisar.php" method="post">
-            <label for="pesquisa">Pesquisar:</label>
-            <input type="text" id="pesquisa" name="pesquisa" required>
-            <input type="submit" value="Enviar">
-        </form>
-        <p><a href="index_usuario.php">Voltar</a></p>
+        <div class="login-container">
+            <form name="pesquisa_jogo" action="pesquisar.php" method="post">
+                <label for="pesquisa">Pesquisar:</label>
+                <input class="caixa" type="text" id="pesquisa" name="pesquisa" required>
+                <input class="botao" type="submit" value="Enviar">
+            </form>
+            <p><a href="index_usuario.php">Voltar</a></p>
+        </div>
         <table border="1" style='width:100%'>
             <tr>
             <th>Imagem</th>
