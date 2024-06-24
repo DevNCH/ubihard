@@ -22,6 +22,7 @@
             <th>Imagem</th>
             <th>Nome</th>
             <th>Preço</th>
+            <th>Descrição</th>
             <th>Plataformas</th>
             </tr>
 
@@ -44,6 +45,7 @@
                 echo "<td><img src='$resultado[8]'></td>";
                 echo "<td>$resultado[1]</td>";
                 echo "<td>R$$resultado[3]</td>";
+                echo "<td>$resultado[2]</td>";
                 echo "<td>$resultado[4]</td>";
                 echo "</tr>";
             }
