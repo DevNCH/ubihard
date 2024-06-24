@@ -19,6 +19,6 @@
         <p><a href="logout.php">Voltar e sair</a></p>
     </body>
     <footer>
-        <p>Para falar com o suporte, entre em contato com o número 91444076 por whatsapp</p>
+        <p>Para falar com o suporte, entre em contato com o número (48)4002-8922 por whatsapp</p>
     </footer>
 </html>
