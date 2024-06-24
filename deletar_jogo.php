@@ -12,35 +12,41 @@
         <link rel="icon" type="image/x-icon" href="ubihard_icon.png">
     </head>
     <body>
-        <h1>Delete um jogo:</h1>
-        <table border="1" style='width:50%'>
-            <tr>
-            <th>Id</th>
-            <th>Nome</th>
-            </tr>
+        <div class="pesquisar-container">
+            <h1>Delete um jogo:</h1>
+            <form action="action_deletar_jogo.php" name="jogo" method="POST">
+                <input class="caixa" type="number" id="id_jogo" name="id_jogo" min=0 placeholder="ID do jogo" required><br>
+                <input class="botao" type="submit" value="Enviar"/><br><br>
+                <a class="botao_4" href="index_admin.php">Voltar</a>
+            </form><br>
+        </div>
+        <div class="mesa-container">
+            <table class="mesa" border="10">
+                <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                </tr>
 
-        <?php
-            include_once("conexao.php");
+            <?php
+                include_once("conexao.php");
 
-            $comando = "SELECT * FROM jogos";
+                $comando = "SELECT * FROM jogos";
 
-            $registro = mysqli_query($conexao, $comando);
+                $registro = mysqli_query($conexao, $comando);
 
-            while ($resultado = mysqli_fetch_array($registro)) {
-                echo "<tr>";
-                echo "<td>$resultado[0]</td>";
-                echo "<td>$resultado[1]</td>";
-                echo "</tr>";
-            }
+                while ($resultado = mysqli_fetch_array($registro)) {
+                    echo "<tr>";
+                    echo "<td>$resultado[0]</td>";
+                    echo "<td>$resultado[1]</td>";
+                    echo "</tr>";
+                }
 
-            mysqli_close($conexao);
-        ?>
-        
-        <form action="action_deletar_jogo.php" name="jogo" method="POST">
-            <label for="id_jogo">Id do jogo:</label>
-            <input type="number" id="id_jogo" name="id_jogo" min=0 required>
-            <input type="submit" value="Enviar"/>
-        </form><br>
-        <a href="index_admin.php">Voltar</a>
+                mysqli_close($conexao);
+            ?>
+            </table>
+        </div>
     </body>
+    <footer>
+        <p>Para falar com o suporte, entre em contato com o número (48)4002-8922 por whatsapp</p>
+    </footer>
 </html>

@@ -21,9 +21,11 @@
 
     if (mysqli_query($conexao, $comando)) {
         echo "Usuário cadastrado com sucesso.";
+        mysqli_close($conexao);
+        header("Location: index.php");
+        exit;
     } else {
         echo "Erro ".mysqli_connect_error($conexao);
+        mysqli_close($conexao);
     }
-
-    mysqli_close($conexao);
 ?>

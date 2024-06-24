@@ -11,15 +11,14 @@
         <link rel="icon" type="image/x-icon" href="ubihard_icon.png">
     </head>
     <body>
-        <div class="login-container">
+        <div class="pesquisar-container">
             <form name="pesquisa_jogo" action="pesquisar.php" method="post">
-                <label for="pesquisa">Pesquisar:</label>
-                <input class="caixa" type="text" id="pesquisa" name="pesquisa" required>
-                <input class="botao" type="submit" value="Enviar">
+                <input class="caixa" type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar..." required><br>
+                <input class="botao" type="submit" value="Buscar"><br><br>
+                <a class="botao_4" href="index_usuario.php">Voltar</a><br><br>
             </form>
-            <p><a href="index_usuario.php">Voltar</a></p>
         </div>
-        <table border="1" style='width:100%'>
+        <table class="mesa" border="10" style='width:100%'>
             <tr>
             <th>Imagem</th>
             <th>Nome</th>
@@ -54,5 +53,9 @@
 
             mysqli_close($conexao);
         ?>
+        </table>
     </body>
+    <footer>
+        <p>Para falar com o suporte, entre em contato com o número (48)4002-8922 por whatsapp</p>
+    </footer>
 </html>

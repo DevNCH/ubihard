@@ -8,19 +8,24 @@
         <link rel="icon" type="image/x-icon" href="ubihard_icon.png">
     </head>
     <body>
-        <h3>Insira as informações da conta para trocar a senha:</h3>
-        <form action="trocar_senha.php" name="form_troca_senha" method="POST">
-            <label for="usuario">Usuário:</label>
-            <input type="text" id="usuario" name="usuario" maxlength="32" required autofocus><br>
-                            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" maxlength="255" required><br>
+        <div class="cadastro-container">
+            <h2>Insira as informações da conta para trocar a senha:</h2>
+            <form action="trocar_senha.php" name="form_troca_senha" method="POST">
+                <label class="texto_form" for="usuario">Usuário:</label>
+                <input class="caixa" type="text" id="usuario" name="usuario" maxlength="32" required autofocus><br>
+                                
+                <label class="texto_form" for="email">E-mail:</label>
+                <input class="caixa" type="email" id="email" name="email" maxlength="255" required><br>
 
-            <label for="data_nascimento">Data de nascimento:</label>
-            <input type="date" id="data_nascimento" name="data_nascimento" min="1900-01-01" max="2007-12-31" required><br>
+                <label class="texto_form" for="data_nascimento">Data de nascimento:</label>
+                <input class="caixa" type="date" id="data_nascimento" name="data_nascimento" min="1900-01-01" max="2007-12-31" required><br><br>
 
-            <input type="submit" value="Enviar"/>
-            <input type="reset" name="botao" value="Limpar"/>
-        </form>
+                <input class="botao_3" type="submit" value="Enviar"/><br><br>
+                <input class="botao_4" type="reset" name="botao" value="Limpar"/>
+            </form>
+        </div>
     </body>
+    <footer>
+        <p>Para falar com o suporte, entre em contato com o número (48)4002-8922 por whatsapp</p>
+    </footer>
 </html>

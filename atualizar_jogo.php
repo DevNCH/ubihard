@@ -12,9 +12,26 @@
         <link rel="icon" type="image/x-icon" href="ubihard_icon.png">
     </head>
     <body>
-        <h1>Atualize um jogo:</h1>
+        <div class="cadastro-container">
+            <h1>Atualize um jogo:</h1>
+            <form action="action_atualizar_jogo.php" name="jogo" method="POST">
+                <input class="caixa" type="number" id="id_jogo" name="id_jogo" min=0 placeholder="ID do jogo" required autofocus><br>
+                <input class="caixa" type="text" id="nome" name="nome" maxlength="100" placeholder="Nome" required><br>
+                <input class="caixa" type="text" id="descricao" name="descricao" maxlength="300" placeholder="Descrição" required><br>
+                <input class="caixa" type="number" id="valor" name="valor" min=0 step=0.01 placeholder="Valor" required><br>
+                <input class="caixa" type="text" id="plataforma" name="plataforma" maxlength="200" placeholder="Plataforma" required><br>
+                <input class="caixa" type="text" id="desenvolvedora" name="desenvolvedora" maxlength="50" placeholder="Desenvolvedora" required><br>
+                <input class="caixa" type="text" id="distribuidora" name="distribuidora" maxlength="50" placeholder="Distribuidora" required><br>
+                <label for="lancamento">Lançamento: </label>
+                <input class="caixa" type="date" id="lancamento" name="lancamento" min="1900-01-01" max="2024-12-31" required><br>
+                <input class="caixa" type="text" id="link_imagem" name="link_imagem" maxlength="500" placeholder="Link da imagem" required><br>
+
+                <input class="botao_3" type="submit" value="Enviar"/><br><br>
+                <a class="botao_4" href="index_admin.php">Voltar</a>
+            </form>
+        </div>
         <div>
-            <table border="1" style='width:100%'>
+            <table class="mesa" border="10" style='width:100%'>
                 <tr>
                 <th>Id</th>
                 <th>Nome</th>
@@ -50,39 +67,10 @@
 
                 mysqli_close($conexao);
             ?>
+            </table>
         </div>
-            <div>
-            <form action="action_atualizar_jogo.php" name="jogo" method="POST">
-                <label for="id_jogo">Id do jogo:</label>
-                <input type="number" id="id_jogo" name="id_jogo" min=0 required><br><br>
-                
-                <label for="nome">Nome do jogo:</label>
-                <input type="text" id="nome" name="nome" maxlength="100" required autofocus><br><br>
-                
-                <label for="descricao">Descrição do jogo:</label>
-                <input type="text" id="descricao" name="descricao" maxlength="300" required><br><br>
-                
-                <label for="valor">Valor do jogo:</label>
-                <input type="number" id="valor" name="valor" min=0 step=0.01 required><br><br>
-                
-                <label for="plataforma">Plataformas:</label>
-                <input type="text" id="plataforma" name="plataforma" maxlength="200" required><br><br>
-
-                <label for="desenvolvedora">Desenvolvedora do jogo:</label>
-                <input type="text" id="desenvolvedora" name="desenvolvedora" maxlength="50" required><br><br>
-                
-                <label for="distribuidora">Distribuidora do jogo:</label>
-                <input type="text" id="distribuidora" name="distribuidora" maxlength="50" required><br><br>
-
-                <label for="lancamento">Data de lançamento:</label>
-                <input type="date" id="lancamento" name="lancamento" min="1900-01-01" max="2024-12-31" required><br><br>
-
-                <label for="link_imagem">Link da imagem (da steam) do jogo:</label>
-                <input type="text" id="link_imagem" name="link_imagem" maxlength="500" required><br><br>
-
-                <input type="submit" value="Enviar"/>
-            </form>
-        </div>
-        <a href="index_admin.php">Voltar</a>
     </body>
+    <footer>
+        <p>Para falar com o suporte, entre em contato com o número (48)4002-8922 por whatsapp</p>
+    </footer>
 </html>

@@ -12,11 +12,13 @@
         <link rel="icon" type="image/x-icon" href="ubihard_icon.png">
     </head>
     <body>
-        <h1>Bem vindo administrador!</h1>
-        <a href="cadastrar_jogo.php">Cadastrar jogo</a><br>
-        <a href="atualizar_jogo.php">Atualizar dados de um jogo</a><br>
-        <a href="deletar_jogo.php">Deletar jogo</a>
-        <p><a href="logout.php">Voltar e sair</a></p>
+        <div  class="login-container">
+            <h1>Bem vindo administrador!</h1>
+            <a class="botao_1" href="cadastrar_jogo.php">Cadastrar jogo</a><br>
+            <a class="botao_1" href="atualizar_jogo.php">Atualizar jogo</a><br>
+            <a class="botao_1" href="deletar_jogo.php">Deletar jogo</a><br><br>
+            <a class="botao_2" href="logout.php">Voltar e sair</a>
+        </div>
     </body>
     <footer>
         <p>Para falar com o suporte, entre em contato com o número (48)4002-8922 por whatsapp</p>

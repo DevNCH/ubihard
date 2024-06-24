@@ -14,11 +14,10 @@
          <div class="login-container">
             <h1>Bem vindo <?php echo $_SESSION["nome"]; ?>!</h1>
             <form name="pesquisa_jogo" action="pesquisar.php" method="post">
-                <label for="pesquisa">Pesquisar:</label>
-                <input class="caixa" type="text" id="pesquisa" name="pesquisa" required>
-                <input class="botao" type="submit" value="Enviar">
-            </form>  
-            <p><a href="logout.php">Voltar e sair</a></p>
+                <input class="caixa" type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar..." required><br>
+                <input class="botao" type="submit" value="Buscar">
+            </form><br><br>
+            <a class="botao_2" href="logout.php">Voltar e sair</a>
         </div>  
     </body>
     <footer>

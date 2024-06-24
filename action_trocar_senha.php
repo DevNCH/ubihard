@@ -44,15 +44,20 @@
         <link rel="icon" type="image/x-icon" href="ubihard_icon.png">
     </head>
     <body>
-        <form method="POST">
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" maxlength="32" required autocomplete="off"><br>
-            
-            <label for="senha_dois">Confira a senha:</label>
-            <input type="password" id="senha_dois" name="senha_dois" maxlength="32" required autocomplete="off"><br>
+        <div class="cadastro-container">
+            <form method="POST">
+                <label class="texto_form" for="senha">Senha:</label>
+                <input class="caixa" type="password" id="senha" name="senha" maxlength="32" required autocomplete="off"><br>
+                
+                <label class="texto_form" for="senha_dois">Confira a senha:</label>
+                <input class="caixa" type="password" id="senha_dois" name="senha_dois" maxlength="32" required autocomplete="off"><br><br>
 
-            <input type="submit" value="Enviar"/>
-            <input type="reset" name="botao" value="Limpar"/>
-        </form>
+                <input class="botao_3" type="submit" value="Enviar"/><br><br>
+                <input class="botao_4" type="reset" name="botao" value="Limpar"/>
+            </form>
+        </div>
     </body>
+    <footer>
+        <p>Para falar com o suporte, entre em contato com o número (48)4002-8922 por whatsapp</p>
+    </footer>
 </html>
