@@ -16,7 +16,7 @@
 
     include_once("conexao.php");
 
-    $comando = "UPDATE jogos SET nome = '$nome', descricao = '$descricao', valor = $valor, plataformas = $plataforma desenvolvedora = '$desenvolvedora', distribuidora = '$distribuidora', lancamento = '$lancamento', link_imagem = '$link_imagem' WHERE id_jogo = $id_jogo;";
+    $comando = "UPDATE jogos SET nome = '$nome', descricao = '$descricao', valor = $valor, plataformas = '$plataforma', desenvolvedora = '$desenvolvedora', distribuidora = '$distribuidora', lancamento = '$lancamento', link_imagem = '$link_imagem' WHERE id_jogo = $id_jogo;";
     
     if (mysqli_query($conexao, $comando)) {
         echo "Jogo atualizado com sucesso.";
